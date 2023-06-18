@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+    .primaryButton {
+        @apply bg-primaryOrange py-3 px-6 rounded-lg text-white w-fit disabled:opacity-50
+    }
+
+    .leaflet-control-geosearch {
+        @apply absolute top-0 left-0 !z-[100000000] w-full h-full
+    }
+}

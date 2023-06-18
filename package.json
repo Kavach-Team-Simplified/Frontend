@@ -6,20 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "push": "next build && git add . && git commit"
   },
   "dependencies": {
     "@next/font": "13.4.6",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
     "fuzzy-search": "^3.2.1",
+    "leaflet": "^1.9.4",
+    "leaflet-control-geocoder": "^2.4.0",
+    "leaflet-geosearch": "^3.8.0",
     "next": "13.4.6",
     "react": "18.2.0",
     "react-detect-offline": "^2.4.5",
     "react-dom": "18.2.0",
     "react-icons": "^4.9.0",
+    "react-leaflet": "^4.2.1",
     "react-reveal": "^1.2.2",
-    "react-toastify": "^9.1.3"
+    "react-toastify": "^9.1.3",
+    "use-debounce": "^9.0.4"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.14",

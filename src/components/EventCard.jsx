@@ -15,7 +15,7 @@ const EventCard = ({ name, time, address, officials, id, status }) => {
             <span className="text-2xl font-semibold">{name}</span> . {date}
           </h1>
           {status != "past" && (
-            <h1 className="text-darkerBlue first-letter:capitalize">
+            <h1 className="bg-primaryBlue px-2 py-1 rounded-lg text-white  first-letter:capitalize">
               {status}
             </h1>
           )}
@@ -34,9 +34,7 @@ const EventCard = ({ name, time, address, officials, id, status }) => {
           View details
         </Link>
         {status === "upcoming" && (
-          <button className="mt-2 bg-primaryOrange py-3 px-6 rounded-lg text-white w-fit">
-            Start Event
-          </button>
+          <button className="mt-2 primaryButton">Start Event</button>
         )}
       </div>
     </>
